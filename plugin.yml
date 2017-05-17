@@ -1,0 +1,4 @@
+name: GoogleAnalytics
+main: DarkN3ss\GoogleAnalytics\GoogleAnalytics
+version: 1.0.0
+api: 1.0.0
