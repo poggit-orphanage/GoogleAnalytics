@@ -2,6 +2,7 @@
 
 namespace DarkN3ss\GoogleAnalytics;
 
+use pocketmine\Server;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerPreLoginEvent;
@@ -141,6 +142,6 @@ class EventListener implements Listener{
 	
     public function asyncOperation($url){
     $trackerTask = new TrackerAsyncTask($url);
-    $this->plugin->getServer()->getScheduler()->scheduleAsyncTask($trackerTask);
+		Server::getInstance()->getAsyncPool()->submitTask($trackerTask);
     }
 }
