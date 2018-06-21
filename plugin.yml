@@ -1,4 +1,4 @@
 name: GoogleAnalytics
 main: DarkN3ss\GoogleAnalytics\GoogleAnalytics
-version: 1.0.1-6
-api: [3.0.0-ALPHA12]
+version: 1.0.2
+api: [3.0.0]
